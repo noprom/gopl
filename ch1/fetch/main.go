@@ -19,6 +19,7 @@ func main() {
 			os.Exit(1)
 		}
 
+		fmt.Printf("code: %s", resp.Status)
 		b, err := ioutil.ReadAll(resp.Body)
 		resp.Body.Close()
 		if err != nil {
