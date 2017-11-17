@@ -18,7 +18,7 @@ func main() {
 
 	// Square
 	go func() {
-		for x := range naturals{
+		for x := range naturals {
 			squares <- x * x
 		}
 		close(squares)
